@@ -8,6 +8,7 @@ import { PlanningPageComponent } from './planning-page/planning-page.component';
 import { RecordsPageComponent } from './records-page/records-page.component';
 import {SystemRoutingModule} from './system-routing.module';
 import {SystemComponent} from './system.component';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import {SystemComponent} from './system.component';
     SharedModule,
     SystemRoutingModule],
 
-  declarations: [BillPageComponent, HistoryPageComponent, PlanningPageComponent, RecordsPageComponent, SystemComponent]
+  declarations: [BillPageComponent, HistoryPageComponent, PlanningPageComponent, RecordsPageComponent, SystemComponent, SidebarComponent]
 })
 export class SystemModule {}
