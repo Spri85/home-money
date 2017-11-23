@@ -9,6 +9,8 @@ import { RecordsPageComponent } from './records-page/records-page.component';
 import {SystemRoutingModule} from './system-routing.module';
 import {SystemComponent} from './system.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import {DropdownDirective} from './shared/directives/dropdown.directive';
 
 @NgModule({
   imports: [
@@ -16,6 +18,15 @@ import { SidebarComponent } from './shared/components/sidebar/sidebar.component'
     SharedModule,
     SystemRoutingModule],
 
-  declarations: [BillPageComponent, HistoryPageComponent, PlanningPageComponent, RecordsPageComponent, SystemComponent, SidebarComponent]
+  declarations: [
+    BillPageComponent,
+    HistoryPageComponent,
+    PlanningPageComponent,
+    RecordsPageComponent,
+    SystemComponent,
+    SidebarComponent,
+    HeaderComponent,
+    DropdownDirective
+  ]
 })
 export class SystemModule {}
