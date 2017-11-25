@@ -10,7 +10,7 @@
   <section class="section" *ngIf="isLoaded">
     <div class="row">
       <div class="col-md-6">
-        <spr-add-event></spr-add-event>
+        <spr-add-event [categories]="categories"></spr-add-event>
       </div>
       <div class="col-md-6">
         <spr-add-category (onCategoryAdd)="newCategoryAdded($event)"></spr-add-category>
