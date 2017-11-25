@@ -13,4 +13,8 @@ export class EventsService extends BaseApi {
   addEvent(event: SPREvent): Observable<SPREvent> {
     return this.post('events', event);
   }
+
+  getEvents(): Observable<SPREvent[]> {
+    return this.get('events');
+  }
 }
