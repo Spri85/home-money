@@ -17,4 +17,8 @@ export class EventsService extends BaseApi {
   getEvents(): Observable<SPREvent[]> {
     return this.get('events');
   }
+
+  getEventById(id: string): Observable<SPREvent> {
+    return this.get(`events/${id}`);
+  }
 }
