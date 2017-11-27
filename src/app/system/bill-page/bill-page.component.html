@@ -9,7 +9,9 @@
   </div>
 </div>
 <section class="section">
-  <div class="row text-center" *ngIf="!isLoaded">Loading ...</div>
+  <div class="row text-center" *ngIf="!isLoaded">
+    <spr-loader></spr-loader>
+  </div>
   <div class="row" *ngIf="isLoaded">
     <spr-bill-card [bill]="bill" [currency]="currency"></spr-bill-card>
     <spr-currency-card [currency]="currency"> </spr-currency-card>
