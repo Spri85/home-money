@@ -8,7 +8,7 @@
     "postinstall": "ng build --prod",
     "build-prod": "ng build --prod",
     "deploy:gh": "concurrently --kill-others \"ng build --prod --base-href 'https://spri85.github.io/home-money/'\" \"ngh\"",
-    "deploy:firebase": "concurrently --kill-others \"ng build --prod\" \"firebase deploy",
+    "deploy:firebase": "concurrently --kill-others \"ng build --prod\" \"firebase deploy\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
